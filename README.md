@@ -34,17 +34,15 @@ BITLAB adalah aplikasi web untuk melacak portofolio aset kripto dalam satu dashb
 - [Chart.js](https://www.chartjs.org/)
 - [PocketBase](https://pocketbase.io/) sebagai backend dan auth
 
-Folder utama aplikasi Next.js:
 
-- `bitlab-next/`
 
 ## Menjalankan Secara Lokal
 
 1. **Clone repo**
 
    ```bash
-   git clone https://github.com/<username>/<repo>.git
-   cd dashboardCrypto/bitlab-next
+   git clone https://github.com/Createch-Studio/CryptoPortofolio.git
+   cd CryptoPortofolio
    ```
 
 2. **Install dependency**
@@ -58,10 +56,10 @@ Folder utama aplikasi Next.js:
    Buat file `.env.local` di folder `bitlab-next` (sudah dicontohkan di repo):
 
    ```env
-   NEXT_PUBLIC_PB_URL=https://pb.bitlab.web.id
+   NEXT_PUBLIC_PB_URL=https://urlpcketbaseanda
    ```
 
-   Atau ganti dengan URL instance PocketBase kamu sendiri.
+   ganti dengan URL instance PocketBase kamu sendiri.
 
 4. **Jalankan dev server**
 
@@ -88,7 +86,7 @@ Struktur koleksi mengikuti skema yang dipakai di kode (misalnya field `symbol`, 
 
 ## Script NPM
 
-Di `bitlab-next/package.json` terdapat script:
+Di `package.json` terdapat script:
 
 - `npm run dev` – menjalankan Next.js dev server
 - `npm run build` – build aplikasi untuk production
@@ -103,5 +101,7 @@ Di `bitlab-next/package.json` terdapat script:
 
 ## Lisensi
 
-Sesuaikan bagian ini dengan lisensi yang kamu inginkan (misalnya MIT). Saat ini belum ditentukan secara eksplisit.
+Proyek ini dirilis di bawah lisensi MIT.
+
+Lihat file `LICENSE` untuk detail lengkap.
 
