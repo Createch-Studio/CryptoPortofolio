@@ -26,6 +26,7 @@ type PortfolioViewRow = {
   qty: number;
   avgPrice: number;
   live: number;
+  cost: number;
   pnl: number;
   pnlPct: number;
   value: number;
@@ -157,6 +158,7 @@ export default function DashboardPage() {
         qty: r.qty,
         avgPrice,
         live: r.live,
+        cost: r.cost,
         pnl,
         pnlPct,
         value,
@@ -171,7 +173,7 @@ export default function DashboardPage() {
     let totalCost = 0;
     viewRows.forEach((r) => {
       totalVal += r.value;
-      totalCost += r.cost ?? r.value - r.pnl;
+      totalCost += r.cost;
     });
     const pnl = totalVal - totalCost;
     const pnlPct = totalCost > 0 ? (pnl / totalCost) * 100 : 0;
